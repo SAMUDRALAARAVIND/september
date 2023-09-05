@@ -1,0 +1,4 @@
+conditional statements 
+loops 
+variables and data types 
+hoisting (let, var , const , function)
