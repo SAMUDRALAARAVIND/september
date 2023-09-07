@@ -1,4 +1,4 @@
 1. find the peak element in an array.
 2. reverse array in place.
 3. find the second smallest element in the array.
-4. Find the most maximum frequency of an element in a sorted array.
+4. Find the maximum frequency of an element in a sorted array.

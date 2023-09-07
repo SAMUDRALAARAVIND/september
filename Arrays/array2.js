@@ -151,18 +151,20 @@
 // };
 // forEach(f2);
 
-let arr = [3, 4, 5, 6, 9, 12];
-//         0  1  2  3  4   5
-// 3 + 5 + 9 = 17
+// let arr = [3, 4, 5, 6, 9, 12];
+// //         0  1  2  3  4   5
+// // 3 + 5 + 9 = 17
 
-let sum = 0;
+// let sum = 0;
 
-let f = function (element, index) {
-  if (index % 2 == 0) {
-    sum += element;
-  }
-};
+// let f = function (element, index) {
+//   if (index % 2 == 0) {
+//     sum += element;
+//   }
+// };
 
-arr.forEach(f);
+// arr.forEach(f);
 
-console.log(sum);
+// console.log(sum);
+
+// map, filter, reduce, sort
