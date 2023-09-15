@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Update</title>
+
+    <style>
+      .base {
+        border: 2px solid blue;
+        padding: 10px;
+        background-color: yellow;
+        display: block;
+      }
+      .error {
+        color: red;
+        font-size: 14px;
+      }
+      .success {
+        color: green;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <b id="test" class="base">Some bold text</b>
+
+    <button onclick="changeClassName()">Change font Size</button>
+
+    <script src="./dom-update.js"></script>
+  </body>
+</html>
