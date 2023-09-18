@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 255, 0.23);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .modal-body {
+        width: 50vw;
+        margin: auto;
+        background-color: rgb(136, 127, 127);
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <button onclick="showPopup()">Login</button> -->
+
+    <button id="btn">show alert</button>
+    <button onclick="addListner()">add listener</button>
+
+    <script src="./popup.js"></script>
+
+    <script>
+      function showAlertMessage() {
+        alert("Some message");
+      }
+
+      function addListner() {
+        const button = document.getElementById("btn");
+        button.onclick = showAlertMessage;
+      }
+    </script>
+  </body>
+</html>
