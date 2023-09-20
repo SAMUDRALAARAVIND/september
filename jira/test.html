@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      section {
+        display: flex;
+        gap: 20px;
+      }
+      #drag {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+      }
+      #drop {
+        width: 200px;
+        padding: 10px;
+        background-color: gray;
+        height: 400px;
+      }
+      #test {
+        width: 100px;
+        height: 100px;
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div id="drag" draggable="true"></div>
+      <div id="drop"></div>
+      <div id="test"></div>
+    </section>
+
+    <script src="./test.js"></script>
+  </body>
+</html>
