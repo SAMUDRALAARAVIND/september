@@ -10,10 +10,14 @@
         display: flex;
         gap: 20px;
       }
-      #drag {
+      #drag,
+      #drag1,
+      #drag2 {
         width: 100px;
         height: 100px;
         background-color: blue;
+        font-size: 20px;
+        color: white;
       }
       #drop {
         width: 200px;
@@ -30,9 +34,10 @@
   </head>
   <body>
     <section>
-      <div id="drag" draggable="true"></div>
+      <div id="drag" draggable="true">One</div>
+      <div id="drag1" draggable="true">Two</div>
+      <div id="drag2" draggable="true">Three</div>
       <div id="drop"></div>
-      <div id="test"></div>
     </section>
 
     <script src="./test.js"></script>
