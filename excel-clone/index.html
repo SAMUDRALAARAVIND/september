@@ -6,16 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Excel</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="menus.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="options">
+      <div class="menus">
+        <div id="bold" onclick="onClickBold(this)">B</div>
+        <div id="italic" onclick="onClickItalic(this)">I</div>
+        <div id="underlined" onclick="onClickUnderline(this)">U</div>
+
+        <div
+          class="material-icons active-option text-align"
+          data-value="left"
+          onclick="onClickTextAlign(this)"
+        >
+          format_align_left
+        </div>
+        <div
+          class="material-icons text-align"
+          data-value="right"
+          onclick="onClickTextAlign(this)"
+        >
+          format_align_right
+        </div>
+        <div
+          class="material-icons text-align"
+          data-value="center"
+          onclick="onClickTextAlign(this)"
+        >
+          format_align_center
+        </div>
+
+        <div id="text-color">
+          <label for="color-picker"
+            ><span class="material-icons"> border_color </span></label
+          >
+          <input
+            onchange="onChangeTextColor(this)"
+            type="color"
+            id="color-picker"
+            style="width: 0; height: 0"
+          />
+        </div>
+
+        <div id="bg-color">
+          <label for="bgcolor-picker"
+            ><span class="material-icons"> format_color_fill </span></label
+          >
+          <input
+            onchange="onChangeBackgroundColor(this)"
+            type="color"
+            id="bgcolor-picker"
+            style="width: 0; height: 0"
+          />
+        </div>
+      </div>
+
       <span id="active-cell">null</span>
     </div>
-    <main
-      style="position: relative; width: 100vw; height: 100vh; overflow: scroll"
-    >
+
+    <main style="width: 100vw; margin: auto; height: 100vh; overflow: scroll">
       <div id="header">
-        <b>S.No</b>
+        <b style="position: sticky; left: 0; top: 0; background-color: white"
+          >S.No</b
+        >
       </div>
       <section id="body"></section>
     </main>

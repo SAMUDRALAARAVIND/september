@@ -6,7 +6,9 @@
   display: flex;
   position: sticky;
   top: 0;
+  width: fit-content;
   background-color: #fff;
+  z-index: 100;
 }
 #header > b {
   padding: 10px 0;
@@ -42,4 +44,8 @@
 #active-cell {
   background-color: white;
   padding: 2px 20px;
+}
+
+#body {
+  width: fit-content;
 }
