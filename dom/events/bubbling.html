@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Bubbling and Event Delegation</title>
+    <style>
+      div {
+        padding: 40px;
+      }
+      #root {
+        width: 300px;
+        background-color: blue;
+      }
+      #parent {
+        background-color: yellow;
+      }
+      #child {
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div id="root">
+      <div id="parent">
+        <div id="child"></div>
+      </div>
+    </div> -->
+
+    <!-- <button id="btn" class="button" x="108" data-name="aravind" data-x="22">
+      Click Me
+    </button> -->
+
+    <form id="form">
+      <input type="text" required name="username" />
+      <input type="password" required name="password" />
+      <button>submit</button>
+    </form>
+
+    <script src="./bubbling.js"></script>
+  </body>
+</html>
