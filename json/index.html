@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script>
+      //   const container = document.getElementById("container");
+      //   let user = {
+      //     name: "aravind",
+      //     age: 22,
+      //   };
+
+      //   container.setAttribute("data-user", JSON.stringify(user));
+
+      /**
+       * JSON methods.
+       * Date API
+       * Symbol, BigInt
+       */
+
+      //   const reel = {
+      //     videlLink: "",
+      //     likes: 2929,
+      //     shares: 3838,
+      //     comments: 3838,
+      //     pageName: "",
+      //   };
+
+      // JSON => Javascript Object Notation
+
+      // '{"name":"aravind","age":22}'
+
+      //   let x = JSON.stringify(reel);
+
+      //   console.log(typeof x); // string
+
+      //   let obj = JSON.parse(x); //
+
+      //   console.log(obj, typeof obj);
+
+      //   let x = '{"name":"aravind","age":22,"course":"BTech","college":"ABC"}';
+      //   //   console.log(x.name); // {
+      //   let obj = {}; // {"name": "aravind"}
+      //   JSON.parse(x, function (x, y) {
+      //     // x = name, y = aravind ==> for first iteration
+      //     // x = age, y = 22 ==> for second iteration
+      //     // x = course, y = BTech ...
+      //     // z = {source: }
+      //     // console.log(z);
+      //     // if (x === "name") {
+      //     //   obj[x] = y;
+      //     // }
+      //     if (x !== "name" && x) {
+      //       // "" => falsy
+      //       // x = "" !== "name"
+      //       obj[x] = y; // { "": {}}
+      //     }
+      //   }); // obj = {name: "aravind"}
+      //   console.log(obj);
+
+      // let date = new Date(); // extract the current instance
+
+      //   let someInstance = new Date(2014, 5, 2, 15, 0, 0, 0); // 02 June 2014 03:00:00:00PM
+      //   console.log(someInstance);
+
+      //   let someInstance = new Date("2014-05-02T15:00:00");
+
+      //   console.log(someInstance);
+
+      // I have posted an instagram post on 17 Dec 2020 11:30AM
+      // calculate the the number of days from that day.
+
+      //   const postedDate = new Date(2020, 11, 17, 11, 30, 0, 0);
+      //   const currentInstance = new Date();
+      //   let milliSecondsGap = currentInstance - postedDate;
+      //   let secondsGap = milliSecondsGap / 1000;
+      //   let daysGap = parseInt(secondsGap / 86400);
+
+      //   console.log(daysGap / 30);
+
+      // UNIX time => 1970 Jan 01 12:00AM UTC => 1970 Jan 01 05:30AM IST
+      // epoch time => is the number of seconds gap starting from UNIX time to that instance.
+
+      //   const unixIst = new Date(1970, 0, 1, 5, 30, 0, 0);
+      //   const currentTime = new Date();
+
+      //   console.log(currentTime - unixIst); //epoch time of the current instance
+
+      //   console.log(unixIst.getTime());
+      //   console.log(currentTime.getTime());
+
+      // getTime() => will return epoch time in millis.
+
+      //   const i1 = new Date(2014, 5, 2, 11, 0, 0, 0);
+      //   // Mon Jun 02 2014 11:00:00 GMT+0530 (India Standard Time)
+
+      //   const i2 = new Date();
+
+      //   console.log(i1);
+      //   console.log(i2);
+
+      //   console.log(i2 - i1); // gives the milliseconds gap between instances
+
+      //   console.log(i2.getTime() - i1.getTime());
+
+      // BigInt => Big Integer
+
+      //   let x = -9007199254740992;
+      // -(2^53-1) <= num <= (2^53-1)
+      // -9007199254740992 <= num <= 9007199254740992
+      // 9007199254740992 + 1 = 9007199254740993
+
+      //   console.log(x);
+      // typeof x => number, typeof 5 => number
+
+      /*
+      let num = 1; // number literal
+      let num1 = Number(1); //
+
+      console.log(num === num1);
+      */
+
+      //   let y = BigInt(9007199254740992);
+      //   let y1 = 9007199254740992n; // bigint literal
+      //   //   console.log(y === y1);
+      //   let z = BigInt(3);
+      //   console.log(y + z);
+      // typeof y bigint, typeof 1 => number
+
+      // Symbol (uniqueness)
+      // symbol is a primitive datatype in js
+      //   let x = Symbol(); // number | string | undefined
+      //   console.log(x, typeof x);
+
+      //   let bjpSymbol = Symbol("lotus"); // #100
+      //   let bjp2 = Symbol("lotus"); // #200
+      //   console.log(bjpSymbol === bjp2); // #100 === #200
+
+      //   const roll1 = Symbol("roll number"); // #500
+      //   const roll2 = Symbol("roll number"); // #600
+
+      //   let user = {
+      //     [roll1]: 839393,
+      //     [roll2]: 28392,
+      //   };
+
+      //   console.log(user[roll1], user[roll2]);
+      //   console.log(user[Symbol("roll number")]);
+
+      //   for (let i in user) {
+      //     console.log(i);
+      //   }
+    </script>
+  </body>
+</html>
