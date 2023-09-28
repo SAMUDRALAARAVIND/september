@@ -9,20 +9,24 @@
   </head>
   <body>
     <section>
-      <div id="todo">
+      <div id="todo" class="container">
+        <!-- div.container -->
         <h3>To Do</h3>
         <button>Create Issue</button>
         <input class="hide" />
         <div class="cards"></div>
       </div>
 
-      <div id="in-progress">
+      <div id="in-progress" class="container" data-drop="droppable">
+        <!-- div.container -->
         <h3>In Progress</h3>
         <button>Create Issue</button>
         <input class="hide" />
         <div class="cards"></div>
       </div>
-      <div id="done">
+
+      <div id="done" class="container">
+        <!-- div.container -->
         <h3>Done</h3>
         <button>Create Issue</button>
         <input class="hide" />
@@ -30,6 +34,7 @@
       </div>
     </section>
 
+    <script src="./dragging.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>

@@ -38,6 +38,9 @@ function handleInput(event) {
         <button onclick="deleteTask(this)">delete</button>
     `;
 
+    // add the dragstart event for evry created card.
+    card.addEventListener("dragstart", onDragStart);
+
     // the above card should go inside the <div class="cards"></div>
     const cardsContainer = inputElement.nextElementSibling;
     cardsContainer.appendChild(card);
