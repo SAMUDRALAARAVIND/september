@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Player</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./video.css" />
+  </head>
+  <body>
+    <div id="container">
+      <video id="video" src="./video.mp4"></video>
+      <div class="options">
+        <div id="progress">
+          <div id="progress-bar"></div>
+        </div>
+        <div class="bottom-options">
+          <div id="play-pause" class="material-icons">play_arrow</div>
+          <div class="right-options">
+            <div id="timer">0s</div>
+            <div id="duration">0s</div>
+            <div class="position-controls">
+              <span
+                class="material-icons"
+                style="transform: rotate(180deg)"
+                onclick="backward()"
+                >fast_forward</span
+              >
+              <span class="material-icons" onclick="forward()"
+                >fast_forward</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./video-player.js"></script>
+  </body>
+</html>
