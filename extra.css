@@ -1,0 +1,20 @@
+.bottom-container {
+  display: flex;
+  gap: 20px;
+  width: 50vw;
+  padding: 10px;
+  align-items: center;
+}
+
+.bottom-container > span {
+  padding: 10px 20px !important;
+}
+.bottom-container > input {
+  border: none;
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.bottom-container > input:focus {
+  outline: none;
+}
